@@ -1,6 +1,5 @@
 body {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
 }
 
 h1, h2 {
@@ -9,6 +8,11 @@ h1, h2 {
 
 h1 {
     font-size: 3em;
+    color: #00B;
+}
+
+span {
+    color: #0b0;
 }
 
 h2 {
@@ -18,3 +22,9 @@ h2 {
 p {
     font-family: Arial;
 }
+
+span.bold { font-weight: bold; }
+.red { color: #b00}
+
+#myDiv {color: #00b !important;}
+span#mySpan {color: #0b0;}
