@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de especificidad</title>
+    <style>
+        #id1, #id2, #id3 {
+            color: red;
+        }
+
+        ul li.important {
+            color: green;
+        }
+
+        ul li {
+            color: blue;
+        }
+
+        li.important {
+            color: yellow;
+        }
+
+        li {
+            color: purple;
+        }
+
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>Sin nada.</li>
+        <li class="important">Con class.</li>
+        <li id="id1">Con id.</li>
+        <li id="id2" class="important">Con id y class.</li>
+        <li id="id3" class="important" style="color: pink">Con id, class y style.</li>
+    </ul>
+
+</body>
+</html>
